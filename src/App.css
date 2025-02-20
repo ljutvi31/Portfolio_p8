@@ -1,7 +1,19 @@
-.app {
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
-  background-color: #f8fafc;
-  font-family: "Inter", sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212; /* Un fond plus propre */
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.content-box {
+  background: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent */
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
 }
