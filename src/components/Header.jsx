@@ -1,12 +1,12 @@
 import React from "react";
-import "./Header.css"; // Vérifie que le fichier CSS existe bien
+import "./Header.css";
 
 const Header = () => {
   return (
     <header className="header">
-      <h1>Mon Portfolio</h1>
+      <h1 className="header-title">Ljutvi Harry</h1>
     </header>
   );
 };
 
-export default Header; // ✅ Assure-toi que cette ligne est bien présente
+export default Header;

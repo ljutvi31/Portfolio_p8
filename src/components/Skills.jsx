@@ -1,10 +1,10 @@
 import React from "react";
-import "./Skills.css"; // Vérifie que le fichier CSS existe
+import "./Skills.css";
 
 const Skills = () => {
   return (
     <section className="skills">
-      <h2>Mes Compétences</h2>
+      <h2>Compétences</h2>
       <ul>
         <li>HTML / CSS / JavaScript</li>
         <li>React / React Router</li>
@@ -16,4 +16,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; // ✅ Assure-toi que l'export est bien DEFAULT
+export default Skills;

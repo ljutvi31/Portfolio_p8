@@ -1,3 +1,4 @@
+import "./index.css"; // Charge Tailwind pour tout le projet
 import React from "react";
 import Header from "./components/Header";// Correct the import case
 import Hero from "./components/Hero";
@@ -9,6 +10,7 @@ import "./App.css"; // Import du style global
 const App = () => {
   return (
     <main className="app">
+  
       <Header />
       <Hero />
       <Skills />

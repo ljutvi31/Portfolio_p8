@@ -1,0 +1,12 @@
+.contact {
+    text-align: center;
+    background: #333;
+  }
+  .contact a {
+    color: #6b46c1;
+    font-size: 1.2rem;
+  }
+  .github {
+    background: #333;
+    color: white;
+}
