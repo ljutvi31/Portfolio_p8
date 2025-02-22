@@ -25,8 +25,7 @@ const Hero = () => {
     <section className="hero">
       <h2>Développeur Web</h2>
       <p>
-        VIVE LES MERGUEZ SAUCISSES ET CE MONDE PAR EN LIVE. Passionné par le développement web et les nouvelles technologies, je
-        crée des applications web performantes et accessibles.
+      Après avoir pu explorer divers horizons, je me suis plongé dans le monde fascinant du développement web. En pleine reconversion professionnelle, j’ai suivi une formation intensive de 7 mois tout en partant de zéro, qui m’a révélé un univers aussi complexe que captivant. Chaque ligne de code est une opportunité d’innover, de créer et d’exprimer ce qu'on l'on est. Aujourd’hui, je souhaite développer des applications, modernes et accessibles, avec une ambition claire : améliorer mes compétences, en acquérir de nouvelles avec passion et interêt.
       </p>
       <div className="hero-links">
         <button className="btn contact" onClick={handleContactClick}>
