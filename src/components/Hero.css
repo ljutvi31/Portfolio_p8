@@ -1,59 +1,114 @@
 .hero {
-    background: linear-gradient(to bottom, rgb(255 255 255 / 80%), rgba(0, 0, 0, 0.5));
-    color: white;
-    padding: 4rem 0;
-    text-align: center;
-  }
-  
-  
-  .hero h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .hero p {
-    font-size: 1.25rem;
-    color: #f3f4f6;
-    margin: 1rem 0;
-  }
-  
-  .hero-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
-  .btn {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s ease-in-out;
-    font-size: 1rem;
-    border: none;
-  }
-  
-  .contact {
-    background-color: #6b46c1;
-    color: white;
-  }
-  
-  .contact:hover {
-    background-color: #5a3ba1;
-  }
-  
-  .github {
-    background-color: #3b82f6;
-    color: white;
-  }
-  
-  .github:hover {
-    background-color: #2a6dc4;
-  }
-  
+  background: linear-gradient(to right, rgb(255 255 255 / 80%), rgba(53, 122, 220, 0.868));
+  color: rgb(255, 255, 255);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Titre cliquable */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.hero-title:hover {
+  color: #6b46c1;
+  transform: scale(1.05);
+}
+
+/* Container icône */
+.arrow-container {
+  display: inline-flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotation de la flèche */
+.rotate .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* Contenu caché au départ */
+.hero-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in-out, max-height 1.2s ease-in-out;
+}
+
+/* Lorsque le contenu devient visible */
+.fade-in {
+  opacity: 1;
+  max-height: 500px;
+}
+
+/* Sous-titre */
+.hero h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #5a3ba1;
+}
+
+/* Texte */
+.hero p {
+  font-size: 1.25rem;
+  color: #f3f4f6;
+  margin: 1rem 0;
+}
+
+/* Liens */
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+/* Boutons */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+  border: none;
+}
+
+/* Bouton Contact */
+.contact {
+  background-color: #6b46c1;
+  color: white;
+}
+
+.contact:hover {
+  background-color: #5a3ba1;
+}
+
+/* Bouton GitHub */
+.github {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.github:hover {
+  background-color: #2a6dc4;
+}
+
+/* ANIMATION PULSE POUR LE TITRE */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
