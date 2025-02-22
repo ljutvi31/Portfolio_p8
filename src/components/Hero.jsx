@@ -23,9 +23,9 @@ const Hero = () => {
 
   return (
     <section className="hero">
-      <h2>Développeur Web Full Stack</h2>
+      <h2>Développeur Web</h2>
       <p>
-        Passionné par le développement web et les nouvelles technologies, je
+        VIVE LES MERGUEZ SAUCISSES ET CE MONDE PAR EN LIVE. Passionné par le développement web et les nouvelles technologies, je
         crée des applications web performantes et accessibles.
       </p>
       <div className="hero-links">

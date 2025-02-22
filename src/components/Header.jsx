@@ -4,7 +4,10 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="header-title">Ljutvi Harry</h1>
+      <div className="header-content">
+        <h1 className="header-title">LJUTVI HARRY</h1>
+        <div className="logo">HL</div> {/* Initiales en dessous */}
+      </div>
     </header>
   );
 };

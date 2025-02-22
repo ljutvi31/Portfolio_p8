@@ -1,55 +1,63 @@
+/* HEADER */
 .header {
-    background: linear-gradient(to right, #6644b7, #3b82f6);
-    padding: 1.5rem;
-    text-align: center;
-    font-size: 2.75rem;
-    font-weight: bold;
-  }
+  background: linear-gradient(135deg, #1c1c1c, #252525); /* Dégradé sombre */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #6b46c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .h1 {
-    color: white;
-  }
+/* CONTENEUR GLOBAL */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  @keyframes gradientText {
-    0% {
-      background-position: 0% 80%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .header-title {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    background: linear-gradient(40deg, #060606, #1e63ca, #ffffff);
-    background-size: 150% 150%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 25%;
-    }
-  }
-  
-  .header-title {
-    font-size: 4rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 5px solid transparent;
-    width: fit-content;
-    margin: 0 auto;
-    animation: typing 2s steps(30, end) infinite alternate;
-  }
+/* TITRE HEADER */
+.header-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 12px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards, textGlow 2s infinite alternate, floatEffect 4s infinite ease-in-out 2s;
+}
 
+/* LOGO "HL" */
+.logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #6b46c1, #4f91fd);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* EFFET DE SURVOL */
+.header-title:hover, .logo:hover {
+  transform: scale(1.1);
+}
+
+/* ANIM FADE-IN */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ANIMA GLOW SUR NOM/PRENOM */
+@keyframes textGlow {
+  0% { text-shadow: 0 0 5px #1d172d; }
+  50% { text-shadow: 0 0 15px #a681e5; }
+  100% { text-shadow: 0 0 5px #4c3385; }
+}
+
+/* ANIM FLOTTANTE */
+@keyframes floatEffect {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(145px); } /* Monte légèrement */
+  100% { transform: translateY(0); }  /* Redescend */
+}
