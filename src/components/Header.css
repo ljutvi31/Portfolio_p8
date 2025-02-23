@@ -1,6 +1,6 @@
 /* HEADER */
 .header {
-  background: linear-gradient(135deg, #1c1c1c, #252525); /* Dégradé sombre */
+  background: linear-gradient(135deg, #1c1c1c, #000000); /* Dégradé sombre */
   color: white;
   text-align: center;
   padding: 2rem 1rem;
@@ -19,11 +19,12 @@
 
 /* TITRE HEADER */
 .header-title {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 12px;
   opacity: 0;
   animation: fadeIn 1.5s forwards, textGlow 2s infinite alternate, floatEffect 4s infinite ease-in-out 2s;
+  text-align: center;
 }
 
 /* LOGO "HL" */
@@ -55,9 +56,56 @@
   100% { text-shadow: 0 0 5px #4c3385; }
 }
 
-/* ANIM FLOTTANTE */
+/* ANIM FLOTTANTE - ADAPTÉE POUR MOBILE ET TABLETTE */
 @keyframes floatEffect {
   0% { transform: translateY(0); }
-  50% { transform: translateY(145px); } /* Monte légèrement */
-  100% { transform: translateY(0); }  /* Redescend */
+  50% { transform: translateY(150px); } /* Réduction du mouvement */
+  100% { transform: translateY(0); }
+}
+
+/* 🎯 RESPONSIVE DESIGN */
+@media (max-width: 1024px) { /* TABLETTES */
+  .header {
+    padding: 1.5rem;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  /* Limiter encore plus la descente de l’animation */
+  @keyframes floatEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(130px); } /* Réduction pour tablettes */
+    100% { transform: translateY(0); }
+  }
+}
+
+@media (max-width: 768px) { /* SMARTPHONES */
+  .header {
+    padding: 1rem;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    padding: 0.4rem 1rem;
+  }
+
+  /* Encore moins de mouvement sur mobile */
+  @keyframes floatEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(105px); } /* Limité au strict minimum */
+    100% { transform: translateY(0); }
+  }
 }

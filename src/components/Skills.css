@@ -1,32 +1,93 @@
+/* SECTION COMPÉTENCES */
 .skills {
+  background: linear-gradient(to right, rgb(255 255 255 / 80%), rgba(53, 122, 220, 0.868));
+  padding: 4rem 2rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.934);
-  padding: 4rem 0;
 }
 
-.skills h2 {
-  font-size: 3.5rem;
-  color: #060606;
-  margin-bottom: 2rem;
+/* ANIMATION PULSE POUR COMPÉTENCES */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-/* Grille des compétences */
-.skills-container {
+/* TITRE COMPÉTENCES */
+.skills-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  animation: pulse 1.8s infinite ease-in-out;
+  
+  /* Dégradé et style */
+  margin-top: 2rem; 
+  padding: 2.5rem 4%;
+  border: 2px solid #ffffff; 
+  border-radius: 10px; 
+  background: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Changement de couleur au survol */
+.skills-title:hover {
+  color: #6b46c1;
+}
+
+/* CHEVRON ANIMÉ */
+.arrow-container {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* CONTENU AVEC ANIMATION FADE-IN */
+.skills-content {
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-in-out, transform 0.5s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 600px; /* Ajuste cette valeur selon le contenu */
+}
+
+/* GRILLE DES COMPÉTENCES (Responsive) */
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 1.5rem;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 1.5rem auto 0;
+  padding: 0 2rem;
 }
 
-/* Cartes de compétence */
+/* CARTES DE COMPÉTENCES */
 .skill-card {
   background: linear-gradient(135deg, #6b46c1, #3b82f6);
   color: white;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 12px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -35,14 +96,64 @@
   justify-content: center;
 }
 
-/* Icônes */
+/* ICÔNES DES COMPÉTENCES */
 .skill-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
-/* Animation au survol */
+/* ANIMATION AU SURVOL */
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.2);
+}
+
+/* 📱 RESPONSIVE DESIGN 📱 */
+@media (max-width: 1024px) { /* TABLETTES */
+  .skills {
+    padding: 3rem 1.5rem;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Réduit la largeur */
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) { /* SMARTPHONES */
+  .skills {
+    padding: 2.5rem 1rem;
+    padding-bottom: 8rem; /* Augmente l'espace pour éviter le débordement */
+  }
+
+  .skills-title {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Plus petit pour mobile */
+    gap: 1rem;
+  }
+
+  .skill-card {
+    font-size: 1rem;
+    padding: 1.5rem;
+    min-height: 130px; /* Augmente la hauteur pour bien afficher tout le contenu */
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+  }
 }

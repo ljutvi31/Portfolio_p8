@@ -9,7 +9,9 @@ html, body, #root {
   background-color: #121212;
   color: white;
   font-family: "Inter", sans-serif;
-}
+    overflow-x: hidden;
+  }
+  
 
 /* Style des titres */
 h1, h2, h3 {
@@ -51,3 +53,5 @@ a:hover {
   background-color: #3b82f6;
   color: white;
 }
+
+

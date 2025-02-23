@@ -5,32 +5,40 @@
   text-align: center;
 }
 
-/* Titre cliquable */
+/* TITRE "A PROPOS DE MOI" */
 .hero-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   gap: 10px;
-  animation: pulse 1.5s infinite;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  animation: pulse 1.8s infinite ease-in-out;
+
+  /* Style inspiré de .skills-title */
+  margin-top: 2rem; 
+  padding: 2.5rem 4%;
+  border: 2px solid #ffffff; 
+  border-radius: 10px; 
+  background: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Effet hover */
 .hero-title:hover {
   color: #6b46c1;
   transform: scale(1.05);
 }
 
-/* Container icône */
+/* CHEVRON ANIMÉ */
 .arrow-container {
-  display: inline-flex;
-  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
 
-/* Rotation de la flèche */
 .rotate .arrow-icon {
   transform: rotate(180deg);
 }
@@ -60,14 +68,15 @@
 .hero p {
   font-size: 1.25rem;
   color: #f3f4f6;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  max-width: 800px;
 }
 
 /* Liens */
 .hero-links {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -106,9 +115,61 @@
   background-color: #2a6dc4;
 }
 
-/* ANIMATION PULSE POUR LE TITRE */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+/* 📱 RESPONSIVE DESIGN 📱 */
+@media (max-width: 1024px) { /* TABLETTES */
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    padding: 2rem 6%;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) { /* SMARTPHONES */
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hero h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 90%;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+  }
 }
