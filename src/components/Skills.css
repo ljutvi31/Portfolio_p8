@@ -1,7 +1,7 @@
 /* SECTION COMPÉTENCES */
 .skills {
   background: linear-gradient(to right, rgb(255 255 255 / 80%), rgba(53, 122, 220, 0.868));
-  padding: 4rem 2rem;
+  padding: 1rem 1rem;
   text-align: center;
 }
 
@@ -10,9 +10,11 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -29,19 +31,19 @@
   font-weight: bold;
   transition: color 0.3s ease;
   animation: pulse 1.8s infinite ease-in-out;
-  
+
   /* Dégradé et style */
-  margin-top: 2rem; 
-  padding: 2.5rem 4%;
-  border: 2px solid #ffffff; 
-  border-radius: 10px; 
-  background: rgba(255, 255, 255, 0.1); 
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  margin-top: 0rem;
+  padding: 2.5rem 6%;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(252, 251, 251, 0.2);
 }
 
 /* Changement de couleur au survol */
 .skills-title:hover {
-  color: #6b46c1;
+  color:  #053188
 }
 
 /* CHEVRON ANIMÉ */
@@ -67,22 +69,23 @@
 .fade-in {
   opacity: 1;
   transform: translateY(0);
-  max-height: 600px; /* Ajuste cette valeur selon le contenu */
+  max-height: 600px;
+  /* Ajuste cette valeur selon le contenu */
 }
 
 /* GRILLE DES COMPÉTENCES (Responsive) */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
   max-width: 1000px;
   margin: 1.5rem auto 0;
-  padding: 0 2rem;
+  padding: 0rem;
 }
 
 /* CARTES DE COMPÉTENCES */
 .skill-card {
-  background: linear-gradient(135deg, #6b46c1, #3b82f6);
+  background: linear-gradient(135deg, #35313d, #3b82f6);
   color: white;
   padding: 2rem;
   border-radius: 12px;
@@ -106,7 +109,7 @@
 /* ANIMATION AU SURVOL */
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 25px rgb(255, 255, 255);
 }
 
 .skill-card:hover .skill-icon {
@@ -114,7 +117,9 @@
 }
 
 /* 📱 RESPONSIVE DESIGN 📱 */
-@media (max-width: 1024px) { /* TABLETTES */
+@media (max-width: 1024px) {
+
+  /* TABLETTES */
   .skills {
     padding: 3rem 1.5rem;
   }
@@ -125,15 +130,19 @@
   }
 
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Réduit la largeur */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    /* Réduit la largeur */
     gap: 1rem;
   }
 }
 
-@media (max-width: 768px) { /* SMARTPHONES */
+@media (max-width: 768px) {
+
+  /* SMARTPHONES */
   .skills {
     padding: 2.5rem 1rem;
-    padding-bottom: 8rem; /* Augmente l'espace pour éviter le débordement */
+    padding-bottom: 8rem;
+    /* Augmente l'espace pour éviter le débordement */
   }
 
   .skills-title {
@@ -142,15 +151,18 @@
     margin-top: 1rem;
   }
 
+ @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Plus petit pour mobile */
-    gap: 1rem;
+    grid-template-columns: 1fr;
   }
+}
+
 
   .skill-card {
     font-size: 1rem;
     padding: 1.5rem;
-    min-height: 130px; /* Augmente la hauteur pour bien afficher tout le contenu */
+    min-height: 130px;
+    /* Augmente la hauteur pour bien afficher tout le contenu */
   }
 
   .skill-icon {

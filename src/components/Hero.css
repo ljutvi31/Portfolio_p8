@@ -1,7 +1,6 @@
 .hero {
   background: linear-gradient(to right, rgb(255 255 255 / 80%), rgba(53, 122, 220, 0.868));
-  color: rgb(255, 255, 255);
-  padding: 4rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -15,7 +14,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
-  animation: pulse 1.8s infinite ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
 
   /* Style inspiré de .skills-title */
   margin-top: 2rem; 
@@ -28,7 +27,7 @@
 
 /* Effet hover */
 .hero-title:hover {
-  color: #6b46c1;
+  color: #053188;
   transform: scale(1.05);
 }
 
@@ -61,15 +60,14 @@
 .hero h3 {
   font-size: 2rem;
   margin-top: 1rem;
-  color: #5a3ba1;
+  color:#053188;
 }
 
 /* Texte */
 .hero p {
-  font-size: 1.25rem;
-  color: #f3f4f6;
-  margin: 1rem auto;
-  max-width: 800px;
+  font-size: 1.3rem;
+  color: #FFFFFF; 
+  font-weight: 500;
 }
 
 /* Liens */
@@ -106,13 +104,8 @@
 }
 
 /* Bouton GitHub */
-.github {
-  background-color: #3b82f6;
-  color: white;
-}
-
 .github:hover {
-  background-color: #2a6dc4;
+  background-color: #a78f07;
 }
 
 /* 📱 RESPONSIVE DESIGN 📱 */

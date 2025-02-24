@@ -1,6 +1,7 @@
 /* HEADER */
 .header {
-  background: linear-gradient(135deg, #1c1c1c, #000000); /* Dégradé sombre */
+  background: linear-gradient(135deg, #1c1c1c, #000000);
+  /* Dégradé sombre */
   color: white;
   text-align: center;
   padding: 2rem 1rem;
@@ -31,7 +32,7 @@
 .logo {
   font-size: 3.5rem;
   font-weight: bold;
-  background: linear-gradient(to right, #6b46c1, #4f91fd);
+  background: linear-gradient(15deg, #35313d, #3b82f6);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   margin-top: 10px;
@@ -39,32 +40,59 @@
 }
 
 /* EFFET DE PULSATION AU SURVOL LOGO */
-.header-title:hover, .logo:hover {
+.header-title:hover,
+.logo:hover {
   transform: scale(1.1);
 }
 
 /* ANIM FADE-IN */
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ANIMA GLOW SUR NOM/PRENOM */
 @keyframes textGlow {
-  0% { text-shadow: 0 0 5px #1d172d; }
-  50% { text-shadow: 0 0 15px #a681e5; }
-  100% { text-shadow: 0 0 5px #422a79; }
+  0% {
+    text-shadow: 0 0 5px #0804e8;
+  }
+
+  50% {
+    text-shadow: 0 0 15px #11097a;
+  }
+
+  100% {
+    text-shadow: 0 0 5px #2a0061;
+  }
 }
 
 /* ANIM LOGO FLOTTE */
 @keyframes floatEffect {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(150px); } /* Réduction du mouvement */
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(150px);
+  }
+
+  /* Réduction du mouvement */
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* RESPONSIVE */
-@media (max-width: 1024px) { /* TABLETTES */
+@media (max-width: 1024px) {
+
+  /* TABLETTES */
   .header {
     padding: 1.5rem;
   }
@@ -80,13 +108,24 @@
 
   /* Limiter encore plus la descente de l’animation */
   @keyframes floatEffect {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(130px); } /* Réduction pour tablettes */
-    100% { transform: translateY(0); }
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(130px);
+    }
+
+    /* Réduction pour tablettes */
+    100% {
+      transform: translateY(0);
+    }
   }
 }
 
-@media (max-width: 768px) { /* SMARTPHONES */
+@media (max-width: 768px) {
+
+  /* SMARTPHONES */
   .header {
     padding: 1rem;
   }
@@ -104,8 +143,17 @@
 
   /* Encore moins de mouvement sur mobile */
   @keyframes floatEffect {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(105px); } /* Limité au strict minimum */
-    100% { transform: translateY(0); }
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(105px);
+    }
+
+    /* Limité au strict minimum */
+    100% {
+      transform: translateY(0);
+    }
   }
 }

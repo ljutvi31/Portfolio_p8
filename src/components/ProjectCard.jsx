@@ -10,4 +10,4 @@ const ProjectCard = ({ title, description }) => {
   );
 };
 
-export default ProjectCard; 
+export default ProjectCard;
