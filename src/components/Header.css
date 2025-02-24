@@ -38,7 +38,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* EFFET DE SURVOL */
+/* EFFET DE PULSATION AU SURVOL LOGO */
 .header-title:hover, .logo:hover {
   transform: scale(1.1);
 }
@@ -53,17 +53,17 @@
 @keyframes textGlow {
   0% { text-shadow: 0 0 5px #1d172d; }
   50% { text-shadow: 0 0 15px #a681e5; }
-  100% { text-shadow: 0 0 5px #4c3385; }
+  100% { text-shadow: 0 0 5px #422a79; }
 }
 
-/* ANIM FLOTTANTE - ADAPTÉE POUR MOBILE ET TABLETTE */
+/* ANIM LOGO FLOTTE */
 @keyframes floatEffect {
   0% { transform: translateY(0); }
   50% { transform: translateY(150px); } /* Réduction du mouvement */
   100% { transform: translateY(0); }
 }
 
-/* 🎯 RESPONSIVE DESIGN */
+/* RESPONSIVE */
 @media (max-width: 1024px) { /* TABLETTES */
   .header {
     padding: 1.5rem;

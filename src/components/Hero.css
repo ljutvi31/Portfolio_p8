@@ -116,7 +116,7 @@
 }
 
 /* 📱 RESPONSIVE DESIGN 📱 */
-@media (max-width: 1024px) { /* TABLETTES */
+@media (max-width: 1024px) { 
   .hero {
     padding: 3rem 1rem;
   }
@@ -142,7 +142,7 @@
   }
 }
 
-@media (max-width: 768px) { /* SMARTPHONES */
+@media (max-width: 768px) { 
   .hero {
     padding: 2.5rem 1rem;
   }
