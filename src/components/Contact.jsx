@@ -18,12 +18,12 @@ const Contact = () => {
       </div>
 
       <div className="social-links">
-        <a href="https://github.com/ljutvi31" target="_blank" rel="noopener noreferrer" className="social-icon github">
+       
           <Github />
-        </a>
-        <a href="https://www.linkedin.com/in/ljutvi31" target="_blank" rel="noopener noreferrer" className="social-icon linkedin">
+        
+       
           <Linkedin />
-        </a>
+      
       </div>
 
       <p className="footer-note">© 2025 Ljutvi Harryum - Tous droits réservés.</p>
