@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(to right, rgb(255 255 255 / 80%), rgba(53, 122, 220, 0.868));
-  padding: 1rem 0;
+  padding: 1rem 3rem;
   text-align: center;
 }
 
@@ -11,17 +11,15 @@
   justify-content: center;
   cursor: pointer;
   gap: 10px;
-  font-size: 2.5rem;
   font-weight: bold;
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
   animation: pulse 2s infinite ease-in-out;
 
   /* Style inspiré de .skills-title */
-  margin-top: 2rem; 
   padding: 2.5rem 4%;
-  border: 2px solid #ffffff; 
-  border-radius: 10px; 
-  background: rgba(255, 255, 255, 0.1); 
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -58,15 +56,13 @@
 
 /* Sous-titre */
 .hero h3 {
-  font-size: 2rem;
   margin-top: 1rem;
-  color:#053188;
+  color: #053188;
 }
 
 /* Texte */
 .hero p {
-  font-size: 1.3rem;
-  color: #FFFFFF; 
+  color: #FFFFFF;
   font-weight: 500;
 }
 
@@ -109,19 +105,17 @@
 }
 
 /* 📱 RESPONSIVE DESIGN 📱 */
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
   .hero {
-    padding: 3rem 1rem;
+    padding: 2rem 3rem;
   }
 
   .hero-title {
-    font-size: 2rem;
     padding: 2rem 6%;
   }
 
   .hero p {
-    font-size: 1.1rem;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .hero-links {
@@ -135,24 +129,14 @@
   }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .hero {
-    padding: 2.5rem 1rem;
+    padding: 2rem 3rem;
   }
 
   .hero-title {
-    font-size: 1.8rem;
     flex-direction: column;
     gap: 5px;
-  }
-
-  .hero h3 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    padding: 0 1rem;
   }
 
   .hero-links {
