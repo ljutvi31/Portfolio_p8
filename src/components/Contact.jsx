@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Github } from "lucide-react";
+import { Mail, GitHub } from "lucide-react";
 import "./Contact.css";
 
 const Contact = () => {
@@ -18,7 +18,7 @@ const Contact = () => {
       </div>
 
       <div className="social-links">
-        <Github />
+        <GitHub />
       </div>
 
       <p className="footer-note">

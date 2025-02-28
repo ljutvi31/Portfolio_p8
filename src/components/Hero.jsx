@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Github, ChevronDown } from "lucide-react"; 
+import { Mail, GitHub, ChevronDown } from "lucide-react"; 
 import "./Hero.css";
 
 const Hero = () => {
@@ -54,7 +54,7 @@ const Hero = () => {
             className="btn github"
             onClick={handleGithubClick}
           >
-            <Github size={20} /> GitHub
+            <GitHub size={20} /> GitHub
           </a>
         </div>
       </div>
