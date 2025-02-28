@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, GitHub, ChevronDown } from "lucide-react"; 
+import { Mail, Github, ChevronDown } from "lucide-react";
 import "./Hero.css";
 
 const Hero = () => {
