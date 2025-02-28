@@ -54,7 +54,7 @@ const Hero = () => {
             className="btn github"
             onClick={handleGithubClick}
           >
-            <GitHub size={20} /> GitHub
+            <Github size={20} /> GitHub
           </a>
         </div>
       </div>

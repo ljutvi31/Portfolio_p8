@@ -1,5 +1,5 @@
 import React from "react";
-import { GitHub, Code } from "lucide-react";
+import { Github, Code } from "lucide-react";
 import "./Projects.css";
 import projects from "../data/projects";
 
@@ -25,7 +25,7 @@ const Projects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHub size={16} /> Voir sur GitHub
+              <Github size={16} /> Voir sur GitHub
             </a>
           </div>
         ))}
