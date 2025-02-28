@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Github, ChevronDown } from "lucide-react"; // ✅ Vérifie bien l'importation
+import { Mail, Github, ChevronDown } from "lucide-react"; 
 import "./Hero.css";
 
 const Hero = () => {
@@ -35,11 +35,15 @@ const Hero = () => {
       <div className={`hero-content ${isVisible ? "fade-in" : ""}`}>
         <h3>Développeur Web</h3>
         <p>
-          Après avoir exploré divers horizons, je me suis plongé dans le monde fascinant du développement web. 
-          En pleine reconversion professionnelle, j’ai suivi une formation intensive de 7 mois en partant de zéro, 
-          qui m’a révélé un univers aussi complexe que captivant. Chaque ligne de code est une opportunité d’innover, 
-          de créer et d’exprimer ce que l'on est. Aujourd’hui, je souhaite développer des applications modernes et accessibles, 
-          avec une ambition claire : améliorer mes compétences, en acquérir de nouvelles avec passion et intérêt.
+          Après avoir exploré divers horizons, je me suis plongé dans le monde
+          fascinant du développement web. En pleine reconversion
+          professionnelle, j’ai suivi une formation intensive de 7 mois en
+          partant de zéro, qui m’a révélé un univers aussi complexe que
+          captivant. Chaque ligne de code est une opportunité d’innover, de
+          créer et d’exprimer ce que l'on est. Aujourd’hui, je souhaite
+          développer des applications modernes et accessibles, avec une ambition
+          claire : améliorer mes compétences, en acquérir de nouvelles avec
+          passion et intérêt.
         </p>
         <div className="hero-links">
           <button className="btn contact" onClick={handleContactClick}>
