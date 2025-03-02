@@ -24,7 +24,8 @@
   font-weight: bold;
   letter-spacing: 12px;
   opacity: 0;
-  animation: fadeIn 1.5s forwards, textGlow 2s infinite alternate, floatEffect 4s infinite ease-in-out 2s;
+  animation: fadeIn 1.5s forwards, textGlow 2s infinite alternate,
+    floatEffect 4s infinite ease-in-out 2s;
   text-align: center;
 }
 
@@ -91,7 +92,6 @@
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-
   /* TABLETTES */
   .header {
     padding: 1.5rem;
@@ -113,7 +113,7 @@
     }
 
     50% {
-      transform: translateY(130px);
+      transform: translateY(129px);
     }
 
     /* Réduction pour tablettes */
@@ -124,7 +124,6 @@
 }
 
 @media (max-width: 768px) {
-
   /* SMARTPHONES */
   .header {
     padding: 1rem;
