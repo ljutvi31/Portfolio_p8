@@ -12,6 +12,7 @@
 /* TITRE "A PROPOS DE MOI" */
 .hero-title {
   display: flex;
+  font-size: 2.2rem;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -107,8 +108,7 @@
   background-color: #a78f07;
 }
 
-/* 📱 RESPONSIVE DESIGN 📱 */
-/* ✅ Même design sur tablette et mobile */
+/* Même design sur tablette et mobile */
 @media (max-width: 1024px) {
   .hero {
     padding: 3rem 2rem;

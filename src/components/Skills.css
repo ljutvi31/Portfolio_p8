@@ -116,8 +116,8 @@
   transform: scale(1.2);
 }
 
-/* 📱 RESPONSIVE DESIGN 📱 */
-/* ✅ Même design sur tablette et mobile */
+
+/* Même design sur tablette et mobile */
 @media (max-width: 1024px) {
   .skills {
     padding: 3rem 2rem;

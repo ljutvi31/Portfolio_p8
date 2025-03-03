@@ -2,60 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #121212;
-  color: white;
+  background-color: #1E1E1E; /* Ceci au lieu de #121212, pour éviter un contraste trop agressif */
+  color: #F2F2F2; /* Ceci au lieu de blanc pur #FFFFFF pour réduire la fatigue visuelle */
   font-family: "Inter", sans-serif;
-    overflow-x: hidden;
-  }
-  
-h1 {
-  font-size: 3rem;
+  overflow-x: hidden;
 }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-/* Style des titres */
-h1, h2, h3 {
-  color: white;
-  text-align: center;
-}
-/* Style des liens */
+
+/* Amélioration des liens */
 a {
-  color: #f3f4f6;
+  color: #4A90E2; /* Ceci au lieu de #FFD700 (jaune), pour un meilleur contraste et lisibilité */
   text-decoration: none;
+  font-weight: bold;
 }
+
 a:hover {
+  color: #357ABD; /* Ceci au lieu de la même couleur en survol */
   text-decoration: underline;
 }
 
-/* Conteneur principal */
-.container {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* Boutons généraux */
+/* Amélioration des boutons */
 .btn {
+  background-color: #4A90E2; /* Ceci au lieu de #6b46c1 (violet foncé) */
+  color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: bold;
   text-align: center;
   display: inline-block;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+  border: none;
 }
 
-.btn-primary {
-  background-color: #6b46c1;
+.btn:hover {
+  background-color: #357ABD; /* Ceci au lieu du violet foncé */
+}
+
+/* Amélioration des alertes */
+.alert {
+  background-color: #D32F2F; /* Ceci au lieu de #E63946 (rouge trop flashy) */
   color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-.btn-secondary {
-  background-color: #3b82f6;
-  color: white;
+/* Focus visible pour la navigation clavier */
+button:focus, a:focus {
+  outline: 2px solid #FFD700; /* Ajout d’un focus visible */
 }
-
-
