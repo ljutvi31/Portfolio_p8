@@ -1,6 +1,11 @@
+/* SECTION HERO */
 .hero {
-  background: linear-gradient(to right, rgb(255 255 255 / 80%), rgba(53, 122, 220, 0.868));
-  padding: 1rem 3rem;
+  background: linear-gradient(
+    to right,
+    rgb(255 255 255 / 80%),
+    rgba(53, 122, 220, 0.868)
+  );
+  padding: 3rem 2rem; /* Uniformisation de l'espacement */
   text-align: center;
 }
 
@@ -14,9 +19,7 @@
   font-weight: bold;
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
   animation: pulse 2s infinite ease-in-out;
-
-  /* Style inspiré de .skills-title */
-  padding: 2.5rem 4%;
+  padding: 2.5rem 6%;
   border: 2px solid #ffffff;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
@@ -62,7 +65,7 @@
 
 /* Texte */
 .hero p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 500;
 }
 
@@ -105,48 +108,24 @@
 }
 
 /* 📱 RESPONSIVE DESIGN 📱 */
+/* ✅ Même design sur tablette et mobile */
 @media (max-width: 1024px) {
   .hero {
-    padding: 2rem 3rem;
-  }
-
-  .hero-title {
-    padding: 2rem 6%;
-  }
-
-  .hero p {
-    padding: 1rem 1.5rem;
-  }
-
-  .hero-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .btn {
-    width: 100%;
-    justify-content: center;
+    padding: 3rem 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 2rem 3rem;
-  }
-
-  .hero-title {
-    flex-direction: column;
-    gap: 5px;
+    padding: 3rem 2rem;
   }
 
   .hero-links {
-    flex-direction: column;
     gap: 1rem;
   }
 
   .btn {
-    width: 90%;
-    justify-content: center;
-    padding: 0.6rem 1rem;
+    width: auto; /* Plus de flexibilité */
+    padding: 0.75rem 1.5rem;
   }
 }
